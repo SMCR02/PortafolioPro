@@ -1,0 +1,108 @@
+/* -----------------Cuerpo principal   -------------*/
+  .header {
+    background-color: green;
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .columna-roja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 500px;
+    background-color: red;
+    color: white;
+    border-right: 10px solid white;
+  }
+
+  .columna-roja:last-child {
+    border-right: none;
+  }
+  
+  .columna-footer {
+    background-color: yellow;
+    font-size: 1.5rem;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer1 {
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  
+  .footer2 {
+    justify-content: flex-start;
+    border-left: 10px solid white;
+    padding-left: 10px;
+  }
+  
+  /*------------------ MEDIA QUERY -------------*/
+
+  @media (max-width: 768px) {
+    .header {
+      text-align: center;
+      background-color: cyan;
+      text-align: center;
+    }
+  
+    .columna-footer {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      border-radius: 5px;
+    }
+  
+    .columna-roja {
+      border-right: none;  
+      height: auto;
+      border-left: 10px solid white;
+    }
+
+    .primer-columna {
+      justify-content: left;
+    }
+  
+    .segunda-columna {
+      justify-content: right;
+    }
+
+    .tercer-columna {
+      background-color: green;
+    }
+
+    .columna-roja:last-child { 
+      border-right: none; 
+      border-bottom: 3px solid white;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .header {
+      background-color: sandybrown;
+    }
+
+    .primer-columna {
+      justify-content: left;
+    }
+
+    .segunda-columna {
+      justify-content: center;
+      background-color: cyan;
+    }
+
+    .tercer-columna {
+      justify-content: right;
+      background-color: red;
+    }
+  }
+
+/*------------------ Fuente de letra -------------------*/
+body {
+    font-family: 'Kablammo', Arial, Helvetica;
+  }
+  
